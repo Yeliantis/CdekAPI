@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdekAPI", "CdekAPI.csproj", "{CE44B697-ACFE-4B06-8DF5-A9829A599B2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE44B697-ACFE-4B06-8DF5-A9829A599B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE44B697-ACFE-4B06-8DF5-A9829A599B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE44B697-ACFE-4B06-8DF5-A9829A599B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE44B697-ACFE-4B06-8DF5-A9829A599B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F93A699-1131-4ECF-998D-8C7BB68921E7}
+	EndGlobalSection
+EndGlobal
