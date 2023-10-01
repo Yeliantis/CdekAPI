@@ -7,10 +7,9 @@ namespace CdekAPI.Actions
     public class Authorization : IAuthorization
 
     {
-        /// <summary>
-        /// Получение строки access_token JWT-токена для авторизации
-        /// </summary>
-        /// <returns></returns>
+        
+        ///<inheritdoc cref="IAuthorization"/>
+
         public async Task<string> GetToken()
         {
             string tokenUrl = "https://api.edu.cdek.ru/v2/oauth/token?parameters";

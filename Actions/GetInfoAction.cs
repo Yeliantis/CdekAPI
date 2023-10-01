@@ -13,19 +13,10 @@ namespace CdekAPI.Actions
         {
             _auth = auth;
         }
-        /// <summary>
-        /// отправка запроса на API СДЭК и десериализация данных с целью получения списка тарифов для доставки
-        /// </summary>
-        /// <param name="weight"></param>
-        /// <param name="height"></param>
-        /// <param name="length"></param>
-        /// <param name="width"></param>
-        /// <param name="from_location"></param>
-        /// <param name="to_location"></param>
-        /// <returns></returns>
-        /// <exception cref="Exception"></exception>
+        ///<inheritdoc cref="IGetInfoAction"/>
         public async Task<TariffsInfo> GetInfoAsync(int weight, int height, int length, int width, int from_location, int to_location)
         {
+            
             string token = await _auth.GetToken();
             var url = "https://api.edu.cdek.ru/v2/calculator/tarifflist";
             var dataToSend = new

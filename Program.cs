@@ -1,7 +1,6 @@
-using AutoMapper;
+
 using CdekAPI.Actions;
 using CdekAPI.Actions.Contracts;
-using CdekAPI.Configuration;
 using CdekAPI.Services;
 using CdekAPI.Services.Contracts;
 
@@ -15,11 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IAuthorization, Authorization>();
 builder.Services.AddScoped<ICostCalculation, CostCalculation>();
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddSingleton<Mapper>(provider => AutoMapperConfiguration.CreateMapper());
 builder.Services.AddScoped<IGetInfoAction, GetInfoAction>();
-
-builder.Services.AddAutoMapper(typeof(AutoMapperConfiguration));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
